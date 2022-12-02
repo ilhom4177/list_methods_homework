@@ -6,6 +6,9 @@ def main(fruits):
     Returns:
         list: return answer
     """
-    x = fruits.pop("apple")
+    x = 0
+    while x < len(fruits):
+        if fruits[x] == "apple":
+            fruits.pop(x)
+        x += 1
     return fruits
-    
